@@ -1,0 +1,10 @@
+<h1>Subir fichero</h1>
+<form #formulario="ngForm" (ngSubmit)="subirArchivo()">
+    <label>Imagen: </label>
+    <input type="file" #file>
+    <button>Subir</button>
+</form>
+
+@if (mensaje) {
+    <h1 style="color:green">{{mensaje}}</h1>
+}
