@@ -1,0 +1,24 @@
+@if(subordinados){
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Apellido</th>
+                <th>Oficio</th>
+                <th>Salario</th>
+                <th>Director</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(subordinado of subordinados; track subordinado) {
+                <tr>
+                    <td>{{subordinado.idEmpleado}}</td>
+                    <td>{{subordinado.apellido}}</td>
+                    <td>{{subordinado.oficio}}</td>
+                    <td>{{subordinado.salario}}</td>
+                    <td>{{subordinado.director}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

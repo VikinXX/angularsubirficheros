@@ -1,8 +1,8 @@
 <h1>Subir fichero</h1>
 <form #formulario="ngForm" (ngSubmit)="subirArchivo()">
     <label>Imagen: </label>
-    <input type="file" #file>
-    <button>Subir</button>
+    <input type="file" #file class="form-control">
+    <button class="btn">Subir</button>
 </form>
 
 @if (mensaje) {

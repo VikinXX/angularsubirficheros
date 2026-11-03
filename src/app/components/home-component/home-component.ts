@@ -37,6 +37,7 @@ export class HomeComponent {
 
     this._serviceUpload.subirFichero(this.fileName, this.base64).subscribe((res) => {
       this.mensaje = 'Fichero subido correctamente';
+      this._cdr.detectChanges();
     })
   }
 

@@ -1,0 +1,29 @@
+<h1>Equipos</h1>
+@if(equipos){
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Imagen</th>
+                <th>Champions</th>
+                <th>Web</th>
+                <th>Descripcion</th>
+                <th>Finalista</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(equipo of equipos; track equipo){
+                <tr>
+                    <td>{{equipo.idEquipo}}</td>
+                    <td>{{equipo.nombre}}</td>
+                    <td><img style="width: 150px; height: 150px;" src="{{equipo.imagen}}" /></td>
+                    <td>{{equipo.champions}}</td>
+                    <td><a href="{{equipo.web}}">Bomba</a></td>
+                    <td>{{equipo.descripcion}}</td>
+                    <td>{{equipo.finalista}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
